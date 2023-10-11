@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 
@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent  implements OnInit {
-
+  @Input() pageTitle: string = '';
 
 
   constructor(private router: Router) { }
@@ -18,4 +18,18 @@ export class HeaderComponent  implements OnInit {
   sair(){
     this.router.navigate(['/']);
   }
+
+  
+  perfil(){
+    this.router.navigate(['/perfil']);
+  }
+
+  sobrenos(){
+    this.router.navigate(['/sobrenos']);
+  }
+
+  perfileditar(){
+    this.router.navigate(['/perfileditar']);
+  }
+
 }

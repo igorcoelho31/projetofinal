@@ -1,0 +1,49 @@
+.avatar{
+    margin: auto;
+    display: block;
+    text-align: center;
+    
+}
+
+ion-avatar{
+    margin: 0 auto;
+}
+
+.carregar{
+    margin: auto;
+    display: block;
+}
+
+svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+  }
+  .container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+    
+  }
+
+  /* Esconde o input */
+input[type='file'] {
+    display: none
+  }
+  
+  /* Aparência que terá o seletor de arquivo */
+  label {
+    position: absolute;
+    background-color: #3498db;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    top: 1vh;
+    padding: 2vh 3vh;
+  }

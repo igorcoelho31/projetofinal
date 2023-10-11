@@ -9,7 +9,12 @@ import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,IonicModule],
+  imports: [BrowserModule, AppRoutingModule,IonicModule,
+    IonicModule.forRoot({
+      scrollAssist: false, // Configuração para desativar o scroll assist
+    }),
+    // ...
+  ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

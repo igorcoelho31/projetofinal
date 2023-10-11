@@ -12,9 +12,14 @@ import { LoginclientePage } from './logincliente.page';
   imports: [
     CommonModule,
     FormsModule,
-    IonicModule,
-    LoginclientePageRoutingModule
+    LoginclientePageRoutingModule,
+
+    IonicModule.forRoot({
+      scrollAssist: false, // Configuração para desativar o scroll assist
+    }),
+    // ...
   ],
-  declarations: [LoginclientePage]
+  declarations: [LoginclientePage],
+  bootstrap: [LoginclientePage],
 })
 export class LoginclientePageModule {}

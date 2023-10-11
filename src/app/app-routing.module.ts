@@ -16,12 +16,12 @@ const routes: Routes = [
     loadChildren: () => import('./cadastro-um/cadastro-um.module').then( m => m.CadastroUmPageModule)
   },
   {
-    path: 'cadastro-dois',
-    loadChildren: () => import('./cadastro-dois/cadastro-dois.module').then( m => m.CadastroDoisPageModule)
-  },
-  {
     path: 'trabalhos',
     loadChildren: () => import('./trabalhos/trabalhos.module').then( m => m.TrabalhosPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
   },
   {
     path: 'logincliente',
@@ -36,8 +36,24 @@ const routes: Routes = [
     loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
   },
   {
-    path: 'perfil',
-    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+    path: 'sobrenos',
+    loadChildren: () => import('./sobrenos/sobrenos.module').then( m => m.SobrenosPageModule)
+  },
+  {
+    path: 'anuncio',
+    loadChildren: () => import('./anuncio/anuncio.module').then( m => m.AnuncioPageModule)
+  },
+  {
+    path: 'dadosfunc',
+    loadChildren: () => import('./dadosfunc/dadosfunc.module').then( m => m.DadosfuncPageModule)
+  },
+  {
+    path: 'perfileditar',
+    loadChildren: () => import('./perfileditar/perfileditar.module').then( m => m.PerfileditarPageModule)
+  },
+  {
+    path: 'recupere',
+    loadChildren: () => import('./recupere/recupere.module').then( m => m.RecuperePageModule)
   },
 ];
 

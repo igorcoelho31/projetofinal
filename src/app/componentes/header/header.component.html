@@ -1,13 +1,13 @@
-<ion-header>
+<ion-header >
   <ion-toolbar color="success" mode="ios">
     <ion-menu-toggle>
       <ion-button fill="clear">
         <ion-icon name="reorder-three-outline" color="light" contentId="main-content"></ion-icon>
       </ion-button> 
     </ion-menu-toggle> 
-    <ion-title style="font-size: 25px;"></ion-title>
+    <ion-title style="font-size: 25px;">{{pageTitle }}</ion-title>
 
-    <img src="https://i.imgur.com/VKV3Udn.png" style="width: 80px; float: right;">
+    <img src="https://i.imgur.com/t6QBDUo.png" style="width: 80px; float: right;">
   </ion-toolbar>
 </ion-header>
 
@@ -15,7 +15,7 @@
 
       
   <ion-item color="dark">
-    <ion-avatar slot="start" style="width:70px; height:70px;">
+    <ion-avatar slot="start" style="width:70px; height:70px;" (click)="perfil()">
       <img alt="Silhouette of a person's head" src="https://www.al.sp.gov.br/repositorio/deputadoPortal/fotos/20230315-170849-id=1649-PEQ.jpeg" />
     </ion-avatar>
     <ion-label>JORGE DA SILVA</ion-label>
@@ -30,10 +30,10 @@
     <ion-item color="dark">
       ÍNICIO
     </ion-item >
-    <ion-item color="dark">
+    <ion-item color="dark" (click)="sobrenos()">
       SOBRE NÓS
     </ion-item>
-    <ion-item color="dark">
+    <ion-item color="dark" (click)="perfileditar()">
       MEU PERFIL
     </ion-item>
     <ion-item color="dark">
@@ -41,7 +41,7 @@
     </ion-item>
 
     <ion-item color="dark" >
-     <ion-button routerLink="..\logincliente" color="danger" (click)="sair()" >SAIR </ion-button>
+     <ion-button color="danger" (click)="sair()" >SAIR </ion-button>
     </ion-item>
   
   
